@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9eaed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-header {
+  margin: 0;
+  background-color: #332288;
   color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.banner {
+  margin: 0;
+  padding: 0.5em;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.nav {
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav li:hover {
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em;
+  margin: 0.5em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+}
+
+.button-header-container {
+  margin-left: auto;
+}
+
+.button-header {
+  background-color: rgb(166, 156, 216, 100%);
+}
+
+.button-header:hover {
+  background-color: rgb(166, 156, 216, 80%);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.subjects-header {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.button-subject {
+  width: 250px;
+  height: 300px;
+  background-color: rgb(166, 156, 216, 100%);
+}
+
+.button-subject:hover {
+  background-color: rgb(166, 156, 216, 80%);
+}
+
+.button-subject a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subject-content {
+  padding: 20px;
+}
+
+.subject-content-heading {
+  margin: 10px 0px;
+}
+
+.subject-content-card {
+  padding: 30px;
+  margin: 20px 0px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.subject-content-sub {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.subject-content-sub a {
+  padding: 10px;
+  color: rgb(98, 97, 97);
+  font-size: 16px;
+}
+
+@media (min-width: 800px) {
+  .subject-content-sub {
+    max-height: 150px;
   }
 }
